@@ -269,7 +269,7 @@ puts "#{base_number} raised to the power of #{exponent_value} is: #{result}"
 =end
 
 ### Files ###
-
+=begin
 # Writing to a file
 file_path = "myfile.txt"
 
@@ -306,6 +306,22 @@ File.open(file_path, "r") do |file|
         puts line
     end
 end
+=end
 
+### Errors Handling ###
 
-
+def divide_numbers(a, b)
+    begin
+        result = a / b
+        puts "Result of division: #{result}"
+    rescue ZeroDivisionError
+        puts "Error: Division by zero is not allowed."
+    rescue => e
+        puts "An unexpected error occurred: #{e.message}"
+    end
+end
+  
+divide_numbers(10, 2)
+divide_numbers(5, 0)
+divide_numbers("a", 2)
+  
