@@ -390,6 +390,53 @@ end
   person1.introduce
 =end  
 
+### Inheritance ###
 
+# Parent class (superclass)
+class Animal
+    attr_accessor :name, :age
+  
+    def initialize(name, age)
+      @name = name
+      @age = age
+    end
+  
+    def make_sound
+      puts "Some generic animal sound."
+    end
+end
+  
+# Child class (subclass) inheriting from Animal
+class Dog < Animal
+    attr_accessor :breed
+
+    def initialize(name, age, breed)
+        # Call the constructor of the parent class using super
+        super(name, age)
+        @breed = breed
+    end
+
+    def make_sound
+        puts "Woof! Woof!"
+    end
+
+    def wag_tail
+        puts "#{name} is wagging its tail."
+    end
+end
+  
+# Creating instances of the classes
+generic_animal = Animal.new("Generic Animal", 3)
+dog = Dog.new("Buddy", 2, "Golden Retriever")
+
+# Using methods from the parent class
+puts "#{generic_animal.name} says:"
+generic_animal.make_sound
+
+# Using methods from the child class
+puts "#{dog.name} says:"
+dog.make_sound
+dog.wag_tail
+  
 
 
