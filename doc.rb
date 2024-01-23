@@ -78,11 +78,17 @@ puts Math.log(1)
 =end
 
 ### user input ###
-
+=begin
 puts "Enter your name : "
 name = gets
 puts ("Is that your name ?" + name)
 puts "Answer (yes/no): "
 answer = gets
-
-
+=end
+=begin
+puts "Enter a number : "
+num1 = gets.to_i
+puts "Enter another number : " 
+num2 = gets.to_i
+puts (num1 + num2)
+=end
