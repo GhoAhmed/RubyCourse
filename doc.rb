@@ -256,7 +256,7 @@ end
 =end
 
 ### Exponentiation method ###
-
+=begin
 def exponent(base, power)
     result = base ** power
     return result
@@ -266,4 +266,52 @@ base_number = 2
 exponent_value = 3
 result = exponent(base_number, exponent_value)
 puts "#{base_number} raised to the power of #{exponent_value} is: #{result}"
+=end
+
+### Files ###
+
+# Writing to a file
+file_path = "myfile.txt"
+
+# Open the file in write mode (creates a new file or truncates an existing one)
+File.open(file_path, "w") do |file|
+  file.puts "Hello, this is some content written to a file."
+  file.puts "Ruby is a powerful language for various tasks."
+end
+
+puts "File has been written successfully."
+
+# Reading from a file
+file_path = "myfile.txt"
+# Reading all the content
+begin
+  File.open(file_path, "r") do |file|
+    puts "-----Content of the file-----"
+    puts file.read
+    end
+end
+# Reading one line
+begin
+    File.open(file_path, "r") do |file|
+        puts "-----Reading one line-----"
+        puts file.readline()
+      end
+end
+# Reading one character
+begin
+    File.open(file_path, "r") do |file|
+        puts "-----Reading one character-----"
+        puts file.readchar()
+      end
+end
+# Reading line by line
+begin
+    File.open(file_path, "r") do |file|
+        puts "-----Reading line by line-----"
+        for line in file.readlines()
+            puts line
+        end
+      end
+end
+
 
