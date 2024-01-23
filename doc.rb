@@ -94,7 +94,7 @@ puts (num1 + num2)
 =end
 
 ### Arrays ###
-
+=begin
 fruits = ["apple", "banana", "orange", "grape"]
 puts fruits
 puts "------------"
@@ -124,4 +124,22 @@ puts "------------"
 days = Array.new
 days[0] = "Monday"
 puts days
+=end
+
+### Hashes ###
+
+person = {
+  "name" => "Ahmed",
+  "age" => 28,
+  "city" => "Kasserine",
+  "occupation" => "Software Engineer"
+}
+puts person
+puts "------------"
+puts person["name"]
+puts person["age"].to_s
+puts "City: #{person["city"]}"
+puts "------------"
+person["hobbies"] = ["reading"]
+puts "Updated hash with hobbies: #{person}"
 
