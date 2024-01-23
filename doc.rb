@@ -327,7 +327,7 @@ divide_numbers("a", 2)
 =end
 
 ### Classes & Objects ###
-
+=begin
 #first example
 class Book
     attr_accessor :title, :author, :pages
@@ -388,7 +388,7 @@ end
   
   # Use the introduce method again
   person1.introduce
-  
+=end  
 
 
 
