@@ -223,16 +223,14 @@ end
 =end
 
 ### While loops ###
-
-# Example of a while loop
+=begin
 counter = 0
 
 while counter < 5
   puts "Current counter value: #{counter}"
   counter += 1
 end
-
-
+=end
 
 
 
