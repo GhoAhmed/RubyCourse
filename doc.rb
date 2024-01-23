@@ -309,7 +309,7 @@ end
 =end
 
 ### Errors Handling ###
-
+=begin
 def divide_numbers(a, b)
     begin
         result = a / b
@@ -324,4 +324,72 @@ end
 divide_numbers(10, 2)
 divide_numbers(5, 0)
 divide_numbers("a", 2)
+=end
+
+### Classes & Objects ###
+
+#first example
+class Book
+    attr_accessor :title, :author, :pages
+end
+####Main
+book1 = Book.new()
+puts book1.title = "My Story"
+puts book1.author = "Ahmed"
+puts book1.pages = 400
+puts "------------------------------"
+
+
+#second example
+class Person
+    attr_accessor :name, :age
+    # Constructor method
+    def initialize(name, age)
+      @name = name
+      @age = age
+    end
   
+    # Getter methods
+    def name
+      @name
+    end
+  
+    def age
+      @age
+    end
+  
+    # Setter methods
+    def name=(new_name)
+      @name = new_name
+    end
+  
+    def age=(new_age)
+      @age = new_age
+    end
+  
+    # Instance method
+    def introduce
+      puts "Hi, I'm #{@name}, and I'm #{@age} years old."
+    end
+end
+####Main
+  # Create an instance (object) of the Person class
+  person1 = Person.new("John", 30)
+  
+  # Access attributes using getter methods
+  puts "#{person1.name} is #{person1.age} years old."
+  
+  # Use the introduce method
+  person1.introduce
+  
+  # Modify attributes using setter methods
+  person1.name = "Jane"
+  person1.age = 25
+  
+  # Use the introduce method again
+  person1.introduce
+  
+
+
+
+
