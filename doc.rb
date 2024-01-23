@@ -232,5 +232,26 @@ while counter < 5
 end
 =end
 
+### For Loops ###
+
+for i in 1..5
+  puts "Iteration #{i}"
+end
+puts "-----------------------"
+# Example of a for loop with an array
+fruits = ["apple", "banana", "orange", "grape", "kiwi"]
+for fruit in fruits
+  puts "Fruit: #{fruit}"
+end
+#for each
+puts "-----------------------"
+fruits.each do |fruit|
+    puts fruit
+end
+#times
+puts "-----------------------"
+5.times do |index|
+    puts index
+end
 
 
