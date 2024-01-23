@@ -92,3 +92,36 @@ puts "Enter another number : "
 num2 = gets.to_i
 puts (num1 + num2)
 =end
+
+### Arrays ###
+
+fruits = ["apple", "banana", "orange", "grape"]
+puts fruits
+puts "------------"
+puts fruits[0]
+puts "------------"
+puts fruits[-2]
+puts "------------"
+puts fruits[1, 2]
+puts "------------"
+fruits[0] = true
+fruits[-1] = 100
+puts fruits
+#length
+puts "------------"
+puts fruits.length()
+#include
+puts "------------"
+puts fruits.include? "Manga"
+#sort & reverse
+puts "------------"
+numbers = [10,2,33,4]
+puts sortedNumbers = numbers.sort()
+puts "------------"
+puts sortedNumbers.reverse()
+#creating an empty array
+puts "------------"
+days = Array.new
+days[0] = "Monday"
+puts days
+
