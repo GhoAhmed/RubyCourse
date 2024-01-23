@@ -221,3 +221,18 @@ else
   puts "Invalid day of the week."
 end
 =end
+
+### While loops ###
+
+# Example of a while loop
+counter = 0
+
+while counter < 5
+  puts "Current counter value: #{counter}"
+  counter += 1
+end
+
+
+
+
+
