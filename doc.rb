@@ -26,7 +26,7 @@ puts "#{isMale}"
 =end
 
 ### working with strings ###
-
+=begin
 ruby_phrase = "Ruby is a powerful language for building web applications."
 my_phrase = "Hello from Tunisia!"
 white_spaces_phrase = "       super   "
@@ -49,3 +49,31 @@ puts my_phrase[0, 5]
 puts my_phrase.index("f")
 #concat
 puts combined_string = ruby_phrase + my_phrase
+=end
+
+### Math & Numbers ###
+
+puts 7.46 + 2.54 # - * /
+#Pow
+puts 2**3
+#Mod
+puts 10 % 3
+#to string
+num = 20
+puts ("My fav number is " + num.to_s)
+#abs
+neg_num = -2
+puts neg_num.abs()
+#round
+round_num = 9.46
+puts round_num.round()
+round_num2 = 9.54
+puts round_num2.round()
+#ceil & floor
+puts round_num.ceil()
+puts round_num2.floor()
+#Math
+puts Math.sqrt(36)
+puts Math.log(1)
+
+
