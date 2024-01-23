@@ -184,7 +184,7 @@ puts "----------------------"
 =end
 
 ### If Statement ###
-
+=begin
 grade = 75
 
 if grade >= 90
@@ -198,4 +198,26 @@ elsif grade >= 60 and grade < 70
 else
   puts "Unfortunately, you failed. Better luck next time."
 end
+=end
 
+### Switch ###
+=begin
+day_of_week = 3
+
+case day_of_week
+when 1
+  puts "It's Monday!"
+when 2
+  puts "It's Tuesday!"
+when 3
+  puts "It's Wednesday!"
+when 4
+  puts "It's Thursday!"
+when 5
+  puts "It's Friday!"
+when 6, 7
+  puts "It's the weekend!"
+else
+  puts "Invalid day of the week."
+end
+=end
