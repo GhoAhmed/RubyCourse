@@ -127,7 +127,7 @@ puts days
 =end
 
 ### Hashes ###
-
+=begin
 person = {
   "name" => "Ahmed",
   "age" => 28,
@@ -142,4 +142,43 @@ puts "City: #{person["city"]}"
 puts "------------"
 person["hobbies"] = ["reading"]
 puts "Updated hash with hobbies: #{person}"
+=end
+
+### Methods ###
+
+#simple method
+def sayHello
+    puts "Hello from Tunisia!"
+end
+
+sayHello
+puts "----------------------"
+
+#with param
+def sayHello(country)
+    puts "Hello from #{country}!"
+end
+
+sayHello("USA")
+puts "----------------------"
+
+#return
+def add_numbers(a, b)
+    sum = a + b
+    return sum
+  end
+  
+puts result = add_numbers(5, 3)
+puts "----------------------"
+
+#return more than value
+def pow_numbers(a, b)
+    pow = a**b
+    return pow, "Power"
+  end
+  
+puts result = pow_numbers(3, 2)
+puts "----------------------"
+puts result = pow_numbers(3, 2)[0] #return only the first value
+puts "----------------------"
 
