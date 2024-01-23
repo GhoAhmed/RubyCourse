@@ -440,7 +440,7 @@ dog.wag_tail
 =end
 
 ### Modules ###
-
+=begin
 module Swim
     def swim
       puts "#{name} is swimming."
@@ -490,6 +490,13 @@ monkey.climb
 
 dolphin.make_sound
 dolphin.swim
+=end
 
+### Modules & require ###
+require_relative 'tools.rb'
+include Tools
+
+Tools.sayHi("Ahmed")
+Tools.sayBye("Ahmed")
 
 
