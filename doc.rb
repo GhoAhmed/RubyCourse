@@ -145,7 +145,7 @@ puts "Updated hash with hobbies: #{person}"
 =end
 
 ### Methods ###
-
+=begin
 #simple method
 def sayHello
     puts "Hello from Tunisia!"
@@ -181,4 +181,21 @@ puts result = pow_numbers(3, 2)
 puts "----------------------"
 puts result = pow_numbers(3, 2)[0] #return only the first value
 puts "----------------------"
+=end
+
+### If Statement ###
+
+grade = 75
+
+if grade >= 90
+  puts "Excellent! You got an A."
+elsif grade >= 80 and grade < 90
+  puts "Good job! You got a B."
+elsif grade >= 70 and grade < 80
+  puts "Nice work! You got a C."
+elsif grade >= 60 and grade < 70
+  puts "You passed, but there's room for improvement. You got a D."
+else
+  puts "Unfortunately, you failed. Better luck next time."
+end
 
