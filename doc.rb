@@ -391,7 +391,7 @@ end
 =end  
 
 ### Inheritance ###
-
+=begin
 # Parent class (superclass)
 class Animal
     attr_accessor :name, :age
@@ -437,6 +437,59 @@ generic_animal.make_sound
 puts "#{dog.name} says:"
 dog.make_sound
 dog.wag_tail
+=end
+
+### Modules ###
+
+module Swim
+    def swim
+      puts "#{name} is swimming."
+    end
+end
   
+module Climb
+    def climb
+      puts "#{name} is climbing."
+    end
+end
+  
+class Animal
+    attr_accessor :name
+  
+    def initialize(name)
+      @name = name
+    end
+  
+    def make_sound
+      puts "Some generic animal sound."
+    end
+end
+  
+class Monkey < Animal
+    include Climb
+  
+    def make_sound
+      puts "Ooh ooh ah ah!"
+    end
+end
+  
+class Dolphin < Animal
+    include Swim
+  
+    def make_sound
+      puts "Ee-ee!"
+    end
+end
+  
+# Instances of classes with modules
+monkey = Monkey.new("Curious George")
+dolphin = Dolphin.new("Flipper")
+
+monkey.make_sound
+monkey.climb
+
+dolphin.make_sound
+dolphin.swim
+
 
 
