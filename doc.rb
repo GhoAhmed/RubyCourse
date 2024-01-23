@@ -492,11 +492,11 @@ dolphin.make_sound
 dolphin.swim
 =end
 
+=begin
 ### Modules & require ###
 require_relative 'tools.rb'
 include Tools
 
 Tools.sayHi("Ahmed")
 Tools.sayBye("Ahmed")
-
-
+=end
