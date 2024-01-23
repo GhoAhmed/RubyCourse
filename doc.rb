@@ -52,7 +52,7 @@ puts combined_string = ruby_phrase + my_phrase
 =end
 
 ### Math & Numbers ###
-
+=begin
 puts 7.46 + 2.54 # - * /
 #Pow
 puts 2**3
@@ -75,5 +75,14 @@ puts round_num2.floor()
 #Math
 puts Math.sqrt(36)
 puts Math.log(1)
+=end
+
+### user input ###
+
+puts "Enter your name : "
+name = gets
+puts ("Is that your name ?" + name)
+puts "Answer (yes/no): "
+answer = gets
 
 
