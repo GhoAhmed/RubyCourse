@@ -284,34 +284,28 @@ puts "File has been written successfully."
 # Reading from a file
 file_path = "myfile.txt"
 # Reading all the content
-begin
-  File.open(file_path, "r") do |file|
+File.open(file_path, "r") do |file|
     puts "-----Content of the file-----"
     puts file.read
-    end
 end
+
 # Reading one line
-begin
-    File.open(file_path, "r") do |file|
-        puts "-----Reading one line-----"
-        puts file.readline()
-      end
+File.open(file_path, "r") do |file|
+    puts "-----Reading one line-----"
+    puts file.readline()
 end
 # Reading one character
-begin
-    File.open(file_path, "r") do |file|
-        puts "-----Reading one character-----"
-        puts file.readchar()
-      end
+File.open(file_path, "r") do |file|
+    puts "-----Reading one character-----"
+    puts file.readchar()
 end
 # Reading line by line
-begin
-    File.open(file_path, "r") do |file|
-        puts "-----Reading line by line-----"
-        for line in file.readlines()
-            puts line
-        end
-      end
+File.open(file_path, "r") do |file|
+    puts "-----Reading line by line-----"
+    for line in file.readlines()
+        puts line
+    end
 end
+
 
 
