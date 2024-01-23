@@ -1,10 +1,10 @@
 def guessingGame
   secret_number = rand(1..50)
-  attempts = 0
+  attempts = 1
 
   puts "Welcome to the Guessing Game! Can you guess the secret number between 1 and 50?"
 
-    while attempts<5
+    while attempts<6
         puts "Guess the number!"
         user_guess = gets.chomp().to_i
         if user_guess == secret_number
@@ -16,6 +16,9 @@ def guessingGame
         else
             puts "Too high. Try again."
             attempts+=1
+        end
+        if attempts>=5
+            puts "GAME OVER"
         end
     end    
 end
