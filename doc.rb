@@ -233,7 +233,7 @@ end
 =end
 
 ### For Loops ###
-
+=begin
 for i in 1..5
   puts "Iteration #{i}"
 end
@@ -253,5 +253,17 @@ puts "-----------------------"
 5.times do |index|
     puts index
 end
+=end
 
+### Exponentiation method ###
+
+def exponent(base, power)
+    result = base ** power
+    return result
+end
+  
+base_number = 2
+exponent_value = 3
+result = exponent(base_number, exponent_value)
+puts "#{base_number} raised to the power of #{exponent_value} is: #{result}"
 
